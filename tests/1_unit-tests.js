@@ -129,25 +129,25 @@ suite('Unit Tests', () => {
 
     //#21
     test('Highlight translation in Mangoes are my favorite fruit.', () => {
-        assert.include(translator.translate('Mangoes are my favorite fruit.', 'american-to-british'), "<span class='highlight'>favourite</span>");
+        assert.include(translator.translate('Mangoes are my favorite fruit.', 'american-to-british'), '<span class="highlight">favourite</span>');
 
     });
 
     //#22
     test('Highlight translation in I ate yogurt for breakfast.', () => {
-        assert.include(translator.translate('I ate yogurt for breakfast.', 'american-to-british'), "<span class='highlight'>yoghurt</span>");
+        assert.include(translator.translate('I ate yogurt for breakfast.', 'american-to-british'), '<span class="highlight">yoghurt</span>');
 
     });
 
     //#23
     test('Highlight translation in We watched the footie match for a while.', () => {
-        assert.include(translator.translate('We watched the footie match for a while.', 'british-to-american'), "<span class='highlight'>soccer</span>");
+        assert.include(translator.translate('We watched the footie match for a while.', 'british-to-american'), '<span class="highlight">soccer</span>');
 
     });
 
     //#24
     test('Highlight translation in Paracetamol takes up to an hour to work.', () => {
-        assert.include(translator.translate('Paracetamol takes up to an hour to work.', 'british-to-american'), "<span class='highlight'>Tylenol</span>");
+        assert.include(translator.translate('Paracetamol takes up to an hour to work.', 'british-to-american'), '<span class="highlight">Tylenol</span>');
 
     });
 });

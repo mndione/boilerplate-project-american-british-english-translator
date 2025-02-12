@@ -44,7 +44,7 @@ class Translator {
             regex = /([\d]{1,2}).([\d]{2})/g;
             separator = ':';
         }
-        return text.replaceAll(regex, "<span class='highlight'>$1"+separator+"$2</span>");
+        return text.replaceAll(regex, '<span class="highlight">$1'+separator+'$2</span>');
     }
     /*
     timeReplace(separator) {
@@ -81,7 +81,7 @@ class Translator {
 
    textReplace(replacement){
     return (match, p1, p2, p3, offset, string) => {
-     if(match==p2) return "<span class='highlight'>" + replacement + "</span>"
+     if(match==p2) return '<span class="highlight">' + replacement + '</span>'
      return match;
     }
   }
